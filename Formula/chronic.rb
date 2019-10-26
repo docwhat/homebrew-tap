@@ -17,7 +17,6 @@ class Chronic < Formula
 
   def install
     bin.install "chronic"
-    bin.install "chronic"
   end
 
   test do
