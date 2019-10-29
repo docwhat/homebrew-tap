@@ -7,11 +7,11 @@ class Chronic < Formula
 
   if OS.mac?
     url "https://github.com/docwhat/chronic/releases/download/v1.0.11/chronic_1.0.11_darwin_amd64.tar.gz"
-    sha256 "29247acc6148f258569f0d8272816f67cac20cf0a9f88dce6ca4152701a4b8fd"
+    sha256 "c5713a49a6f588d8a5c3b130e611f4536e867274b1413283aa83d189b7739d67"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/docwhat/chronic/releases/download/v1.0.11/chronic_1.0.11_linux_amd64.tar.gz"
-      sha256 "8a44e85e144d3fb0d310a0e18c644758f01406ea853af8f6374ecbb2ec6d4c29"
+      sha256 "0ec803ce1672501e12fa90ae77a56805f5e7deac898679e1dca1a084a98b1da2"
     end
   end
 
