@@ -2,16 +2,16 @@
 class Chronic < Formula
   desc "A tool that hides output unless the command fails; now in Go!"
   homepage "https://github.com/docwhat/chronic"
-  version "1.0.9"
+  version "1.0.11"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/docwhat/chronic/releases/download/v1.0.9/chronic_1.0.9_darwin_amd64.tar.gz"
-    sha256 "c90d9f3ba04111bcadd4533fe086a0c3995a85c6d820d283c24aa84c057bfdc7"
+    url "https://github.com/docwhat/chronic/releases/download/v1.0.11/chronic_1.0.11_darwin_amd64.tar.gz"
+    sha256 "c5713a49a6f588d8a5c3b130e611f4536e867274b1413283aa83d189b7739d67"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/docwhat/chronic/releases/download/v1.0.9/chronic_1.0.9_linux_amd64.tar.gz"
-      sha256 "271bbf568db70b65133010d4ee3d5507c7c4e67b944edc9f4cb1aa314f672c2c"
+      url "https://github.com/docwhat/chronic/releases/download/v1.0.11/chronic_1.0.11_linux_amd64.tar.gz"
+      sha256 "0ec803ce1672501e12fa90ae77a56805f5e7deac898679e1dca1a084a98b1da2"
     end
   end
 
