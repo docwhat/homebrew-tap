@@ -3,7 +3,6 @@ class Chronic < Formula
   desc "A tool that hides output unless the command fails; now in Go!"
   homepage "https://github.com/docwhat/chronic"
   version "1.0.11"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/docwhat/chronic/releases/download/v1.0.11/chronic_1.0.11_darwin_amd64.tar.gz"
