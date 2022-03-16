@@ -5,21 +5,21 @@
 class Temple < Formula
   desc "Sick of sed? Prosaic about perl? Use temple to substitute your variables!"
   homepage "https://github.com/docwhat/temple"
-  version "0.4.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/docwhat/temple/releases/download/v0.4.0/temple_0.4.0_macos_arm64.tar.gz"
-      sha256 "8ad5bc72d8f46b9eab5d6c6768f8482ef7e14470c27695b489a2bf172a15819b"
+      url "https://github.com/docwhat/temple/releases/download/v1.0.0/temple_1.0.0_macos_arm64.tar.gz"
+      sha256 "88365ad3cd8ba5beeb12c379a5e3e9d65c18cccbaa0ac30619f01a8af6d53b50"
 
       def install
         bin.install "temple"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/docwhat/temple/releases/download/v0.4.0/temple_0.4.0_macos_amd64.tar.gz"
-      sha256 "b27b3d374b2fac0f33d6d25f464e6af2594fceb3d828cc82c67fea23109d5b9e"
+      url "https://github.com/docwhat/temple/releases/download/v1.0.0/temple_1.0.0_macos_amd64.tar.gz"
+      sha256 "bad9ff4583923c0adf1298d9c1f1c72e7bc240e5f346d169bd2c77e73f0b5ad1"
 
       def install
         bin.install "temple"
@@ -29,24 +29,24 @@ class Temple < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/docwhat/temple/releases/download/v0.4.0/temple_0.4.0_linux_arm64.tar.gz"
-      sha256 "e3bbe77cb8465017b7a53386bba6c06552235c146246f9339815d849b08c1406"
+      url "https://github.com/docwhat/temple/releases/download/v1.0.0/temple_1.0.0_linux_arm64.tar.gz"
+      sha256 "dabb1b431d11b4272a099c626a6def32a4b9186d4b422ba9d0af86f9ff894791"
 
       def install
         bin.install "temple"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/docwhat/temple/releases/download/v0.4.0/temple_0.4.0_linux_armv6.tar.gz"
-      sha256 "b124a0b221040a362392bdf528b8ace8793802525591069b76f0d106de6155d9"
+      url "https://github.com/docwhat/temple/releases/download/v1.0.0/temple_1.0.0_linux_armv6.tar.gz"
+      sha256 "5666e49a60e5299316f903ded5228094f247109ed63fcfe1e5aadb43a319ddde"
 
       def install
-        bin.install "template"
+        bin.install "temple"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/docwhat/temple/releases/download/v0.4.0/temple_0.4.0_linux_amd64.tar.gz"
-      sha256 "3ab0b6137be92e752412c16e186f6b84022dd5fe4e4e68f3d1440c26e22da4f8"
+      url "https://github.com/docwhat/temple/releases/download/v1.0.0/temple_1.0.0_linux_amd64.tar.gz"
+      sha256 "8cdf58a95aff989504f37331ae702ccdcfbc3f5d91591a9501e84bbb34fd4cc3"
 
       def install
         bin.install "temple"
