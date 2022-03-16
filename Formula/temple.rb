@@ -14,7 +14,7 @@ class Temple < Formula
       sha256 "8ad5bc72d8f46b9eab5d6c6768f8482ef7e14470c27695b489a2bf172a15819b"
 
       def install
-        bin.install "template"
+        bin.install "temple"
       end
     end
     if Hardware::CPU.intel?
@@ -22,7 +22,7 @@ class Temple < Formula
       sha256 "b27b3d374b2fac0f33d6d25f464e6af2594fceb3d828cc82c67fea23109d5b9e"
 
       def install
-        bin.install "template"
+        bin.install "temple"
       end
     end
   end
@@ -33,7 +33,7 @@ class Temple < Formula
       sha256 "e3bbe77cb8465017b7a53386bba6c06552235c146246f9339815d849b08c1406"
 
       def install
-        bin.install "template"
+        bin.install "temple"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
@@ -49,13 +49,13 @@ class Temple < Formula
       sha256 "3ab0b6137be92e752412c16e186f6b84022dd5fe4e4e68f3d1440c26e22da4f8"
 
       def install
-        bin.install "template"
+        bin.install "temple"
       end
     end
   end
 
   test do
-    system "#{bin}/template --version"
-    system "#{bin}/template /etc/hosts"
+    system "#{bin}/temple --version"
+    system "#{bin}/temple /etc/hosts"
   end
 end
